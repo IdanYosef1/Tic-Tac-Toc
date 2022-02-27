@@ -54,7 +54,7 @@ img {
   height: 95px;
 }
 
-.buttons {
+.container div {
   margin-left: 100px;
   margin-right: 10px;
   display: flex;

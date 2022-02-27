@@ -56,9 +56,9 @@ function game(iden){
                 newGame(arr);
             },2)
         }  
-        if(counter === n*n){
+        else if(counter === n*n){
             setTimeout(() => {
-                alert("draw");
+                alert("Draw");
             },2)
             
         }    
