@@ -56,9 +56,9 @@ function game(iden){
                 newGame(arr);
             },2)
         }  
-        if(counter === n*n){
+        else if(counter === n*n){
             setTimeout(() => {
-                alert("draw");
+                alert("Draw");
             },2)
             
         }    
@@ -142,7 +142,7 @@ function printPlayerWin(){
     }
 }
 
-/* Removes the onclick attribute from the step back button, removes all images from the table
+/* Removes the onclick attribute from the button "step back", removes all images from the table
    and add the onclick attribute to each cell. 
    In addition, initialized variables. */
 function newGame(){
@@ -161,7 +161,7 @@ function newGame(){
 
 /* If the game board is not empty, it removes the image of the last move from the corresponding cell,
    add the onclick attribute to ecorresponding cell and updates variables.
-   If after the update the game board is empty removes the onclick attribute from the step back button */
+   If after the update the game board is empty removes the onclick attribute from the button "step back". */
 function back(){
     if(counter > 0){
         document.getElementById(`img${prev}`).remove();
@@ -177,7 +177,7 @@ function back(){
     }
 }
 
-// Pressing the Peak button displays a message to the players.
+// Pressing the button "Peak" displays a message to the players.
 function printMin(){
     alert(`Peak: ${peak}.
 Explain: The game ended with a minimum of marked squares.`);
@@ -196,7 +196,7 @@ function saveGame(){
     }
 }
 
-/* Updates the variables by object, updates the onclick attribute of the step back button by counter and
+/* Updates the variables by object, updates the onclick attribute of the button "step back" by counter and
    updates the images and onclick attribute in the game board cells by arr */
 function loadGame(){ 
     if(booleanSave){

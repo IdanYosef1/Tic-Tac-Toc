@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="div-game">
+        <div class="header">
+            <h1>Tic-Tac-Toe</h1>
+        </div>
+        <div class="container" id="Container">
+            <table id="Table">
+            </table>
+            <div class="buttons">
+                <button onclick="newGame()">New game</button>
+                <button onclick ="back()" id="stepback">Step back</button>
+                <button onclick ="printMin()">Peak</button>
+                <button onclick ="saveGame()">Save game</button>
+                <button onclick ="loadGame()" id="loadgame">Load game</button>
+                <button onclick ="changeSize()">Change size</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
